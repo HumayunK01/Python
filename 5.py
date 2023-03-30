@@ -1,3 +1,10 @@
+# Print the following pattern using loop:
+for i in range(1, 5):
+    for i in range(1, i + 1):
+        print("*", end=" ")
+    print(" ")
+print("\n")
+
 # Write a python program to print all the even numbers between 1 too 100 using while loop:
 print("All the even numbers between 1 too 100 are:")
 num = 1
@@ -15,17 +22,15 @@ for i in range(1, 11):
 print("Sum of first 10 natural numbers is", sum, "\n")
 
 # Write a python program to print Fibonacci series:
-n_terms = 10
-n_1 = 0  
-n_2 = 1  
-count = 0  
-print ("The fibonacci series of", n_terms ," numbers is:")  
-while count < n_terms:  
-    print(n_1, end=' ')  
-    nth = n_1 + n_2  
-    n_1 = n_2  
-    n_2 = nth  
-    count += 1
+f1 = 0
+f2 = 1
+print(f1, end=" ")
+print(f2, end=" ")
+while f2 < 50:
+    f = f1 + f2
+    print(f, end=" ")
+    f1 = f2
+    f2 = f
 
 # Write a python program to calculate factorial of a number:
 print("\n")
