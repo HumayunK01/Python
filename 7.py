@@ -3,6 +3,7 @@ T1 = (1, 3, 5, 7, 9, 11, 7, 5)
 print("Tuple is:", T1)
 print("Minimum:", min(T1))
 print("Maximum:", max(T1))
+print("\n")
 
 # Write a Python program to find the repeated items of a tuple.
 repeated = []
@@ -10,6 +11,7 @@ for i in T1:
     if T1.count(i) > 1 and i not in repeated:
         print("Repeated:", i)
         repeated.append(i)
+print("\n")
 
 # Print the number in words for Example: 1234 => One Two Three Four
 Words = []
